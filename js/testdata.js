@@ -1,7 +1,7 @@
 var testdata= {
 "data" : [
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27242,
     "Category": "Foundation Courses",
     "Semester": "Fall 2018",
@@ -25,7 +25,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27262,
     "Category": "Foundation Courses",
     "Semester": "Fall 2018",
@@ -49,7 +49,7 @@ var testdata= {
     "Attribute": "Mathematical Sciences"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 33838,
     "Category": "Foundation Courses",
     "Semester": "Fall 2018",
@@ -73,7 +73,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27281,
     "Category": "Core",
     "Semester": "Fall 2018",
@@ -97,7 +97,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 33840,
     "Category": "Core",
     "Semester": "Fall 2018",
@@ -121,7 +121,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27284,
     "Category": "Core",
     "Semester": "Fall 2018",
@@ -145,7 +145,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27285,
     "Category": "Core",
     "Semester": "Fall 2018",
@@ -169,7 +169,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27291,
     "Category": "Concentration",
     "Semester": "Fall 2018",
@@ -193,7 +193,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27388,
     "Category": "Concentration",
     "Semester": "Fall 2018",
@@ -217,7 +217,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 33842,
     "Category": "Concentration",
     "Semester": "Fall 2018",
@@ -241,7 +241,7 @@ var testdata= {
     "Attribute": "Issues-Info, Innovation, Tech"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27297,
     "Category": "Concentration",
     "Semester": "Fall 2018",
@@ -265,7 +265,7 @@ var testdata= {
     "Attribute": "Supplemental Writing Skills"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27298,
     "Category": "Concentration",
     "Semester": "Fall 2018",
@@ -289,7 +289,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27305,
     "Category": "Concentration",
     "Semester": "Fall 2018",
@@ -313,7 +313,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 30893,
     "Category": "Electives",
     "Semester": "Fall 2018",
@@ -337,7 +337,7 @@ var testdata= {
     "Attribute": "Issues-Info, Innovation, Tech"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 32049,
     "Category": "Electives",
     "Semester": "Fall 2018",
@@ -361,7 +361,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 32050,
     "Category": "Electives",
     "Semester": "Fall 2018",
@@ -385,7 +385,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 32737,
     "Category": "Electives",
     "Semester": "Fall 2018",
@@ -409,7 +409,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 33845,
     "Category": "Electives",
     "Semester": "Fall 2018",
@@ -433,7 +433,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 28495,
     "Category": "Electives",
     "Semester": "Fall 2018",
@@ -457,7 +457,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27310,
     "Category": "Core",
     "Semester": "Fall 2018",
@@ -481,7 +481,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27314,
     "Category": "Core",
     "Semester": "Fall 2018",
@@ -505,7 +505,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27341,
     "Category": "Core",
     "Semester": "Fall 2018",
@@ -529,7 +529,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27345,
     "Category": "Core",
     "Semester": "Fall 2018",
@@ -553,7 +553,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27346,
     "Category": "Core",
     "Semester": "Fall 2018",
@@ -577,7 +577,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27348,
     "Category": "Core",
     "Semester": "Fall 2018",
@@ -601,7 +601,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27349,
     "Category": "Capstone",
     "Semester": "Fall 2018",
@@ -625,7 +625,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27350,
     "Category": "Capstone",
     "Semester": "Fall 2018",
@@ -649,7 +649,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27351,
     "Category": "Capstone",
     "Semester": "Fall 2018",
@@ -673,7 +673,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27353,
     "Category": "Capstone",
     "Semester": "Fall 2018",
@@ -697,7 +697,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27354,
     "Category": "Capstone",
     "Semester": "Fall 2018",
@@ -721,7 +721,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 30809,
     "Category": "Capstone",
     "Semester": "Fall 2018",
@@ -745,7 +745,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27355,
     "Category": "Capstone",
     "Semester": "Fall 2018",
@@ -769,7 +769,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 29254,
     "Category": "Foundation Courses",
     "Semester": "Fall 2018",
@@ -793,7 +793,7 @@ var testdata= {
     "Attribute": "Life Sciences with lab"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27850,
     "Category": "Core",
     "Semester": "Fall 2018",
@@ -817,7 +817,7 @@ var testdata= {
     "Attribute": "Physical Science with lab"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 34597,
     "Category": "Concentration",
     "Semester": "Fall 2018",
@@ -841,7 +841,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 34483,
     "Category": "Electives",
     "Semester": "Fall 2018",
@@ -865,7 +865,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 23600,
     "Category": "Capstone",
     "Semester": "Fall 2018",
@@ -889,7 +889,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 20065,
     "Category": "Foundation Courses",
     "Semester": "Fall 2018",
@@ -913,7 +913,7 @@ var testdata= {
     "Attribute": "World Perspectives and Social Behavioral Sciences-ANT and Social & Behavioral Sciences"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 30042,
     "Category": "Core",
     "Semester": "Fall 2018",
@@ -937,7 +937,7 @@ var testdata= {
     "Attribute": "World Perspectives and Social Behavioral Sciences-ANT and Social & Behavioral Sciences and Supplemental Writing Skills"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27872,
     "Category": "Concentration",
     "Semester": "Fall 2018",
@@ -961,7 +961,7 @@ var testdata= {
     "Attribute": "Life Sciences without lab"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 32749,
     "Category": "Electives",
     "Semester": "Fall 2018",
@@ -985,7 +985,7 @@ var testdata= {
     "Attribute": "US Diversity and Social & Behavioral Sciences"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 31075,
     "Category": "Capstone",
     "Semester": "Fall 2018",
@@ -1009,7 +1009,7 @@ var testdata= {
     "Attribute": "World Perspectives and Social Behavioral Sciences-ANT and Social & Behavioral Sciences and Supplemental Writing Skills"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 20098,
     "Category": "Foundation Courses",
     "Semester": "Fall 2018",
@@ -1033,7 +1033,7 @@ var testdata= {
     "Attribute": "World Perspectives and Historical Perspectives and Honor's College Student"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 20100,
     "Category": "Core",
     "Semester": "Fall 2018",
@@ -1057,7 +1057,7 @@ var testdata= {
     "Attribute": "Life Sciences without lab"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 20104,
     "Category": "Concentration",
     "Semester": "Fall 2018",
@@ -1081,7 +1081,7 @@ var testdata= {
     "Attribute": "US Diversity and Cultural Anthropology and Issues-Identity"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 28727,
     "Category": "Electives",
     "Semester": "Fall 2018",
@@ -1105,7 +1105,7 @@ var testdata= {
     "Attribute": "US Diversity and Cultural Anthropology and Issues-Identity"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 20105,
     "Category": "Capstone",
     "Semester": "Fall 2018",
@@ -1129,7 +1129,7 @@ var testdata= {
     "Attribute": "World Perspectives and Cultural Anthropology and Issues-Identity"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 31628,
     "Category": "Foundation Courses",
     "Semester": "Fall 2018",
@@ -1153,7 +1153,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 31632,
     "Category": "Core",
     "Semester": "Fall 2018",
@@ -1177,7 +1177,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 29548,
     "Category": "Core",
     "Semester": "Fall 2018",
@@ -1201,7 +1201,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 21418,
     "Category": "Core",
     "Semester": "Fall 2018",
@@ -1225,7 +1225,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 32740,
     "Category": "Core",
     "Semester": "Fall 2018",
@@ -1249,7 +1249,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 30726,
     "Category": "Concentration",
     "Semester": "Fall 2018",
@@ -1273,7 +1273,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 21447,
     "Category": "Foundation Courses",
     "Semester": "Fall 2018",
@@ -1297,7 +1297,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 21460,
     "Category": "Concentration",
     "Semester": "Fall 2018",
@@ -1321,7 +1321,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 26422,
     "Category": "Concentration",
     "Semester": "Fall 2018",
@@ -1345,7 +1345,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 34281,
     "Category": "Concentration",
     "Semester": "Fall 2018",
@@ -1369,7 +1369,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 21476,
     "Category": "Electives",
     "Semester": "Fall 2018",
@@ -1393,7 +1393,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 32056,
     "Category": "Electives",
     "Semester": "Fall 2018",
@@ -1417,7 +1417,7 @@ var testdata= {
     "Attribute": "Issues-Sustainability"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 25474,
     "Category": "Foundation Courses",
     "Semester": "Fall 2018",
@@ -1441,7 +1441,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 33853,
     "Category": "Electives",
     "Semester": "Fall 2018",
@@ -1465,7 +1465,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 32058,
     "Category": "Electives",
     "Semester": "Fall 2018",
@@ -1489,7 +1489,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 33795,
     "Category": "Electives",
     "Semester": "Fall 2018",
@@ -1513,7 +1513,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 28083,
     "Category": "Capstone",
     "Semester": "Fall 2018",
@@ -1537,7 +1537,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 28010,
     "Category": "Capstone",
     "Semester": "Fall 2018",
@@ -1561,7 +1561,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 31057,
     "Category": "Foundation Courses",
     "Semester": "Fall 2018",
@@ -1585,7 +1585,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 21547,
     "Category": "Capstone",
     "Semester": "Fall 2018",
@@ -1609,7 +1609,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 33857,
     "Category": "Capstone",
     "Semester": "Fall 2018",
@@ -1633,7 +1633,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 34398,
     "Category": "Capstone",
     "Semester": "Fall 2018",
@@ -1657,7 +1657,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27242,
     "Category": "Foundation Courses",
     "Semester": "Winter 2019",
@@ -1681,7 +1681,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27262,
     "Category": "Foundation Courses",
     "Semester": "Winter 2019",
@@ -1705,7 +1705,7 @@ var testdata= {
     "Attribute": "Mathematical Sciences"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 33838,
     "Category": "Foundation Courses",
     "Semester": "Winter 2019",
@@ -1729,7 +1729,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27281,
     "Category": "Core",
     "Semester": "Winter 2019",
@@ -1753,7 +1753,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 33840,
     "Category": "Core",
     "Semester": "Winter 2019",
@@ -1777,7 +1777,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27284,
     "Category": "Core",
     "Semester": "Winter 2019",
@@ -1801,7 +1801,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27285,
     "Category": "Core",
     "Semester": "Winter 2019",
@@ -1825,7 +1825,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27291,
     "Category": "Concentration",
     "Semester": "Winter 2019",
@@ -1849,7 +1849,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27388,
     "Category": "Concentration",
     "Semester": "Winter 2019",
@@ -1873,7 +1873,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 33842,
     "Category": "Concentration",
     "Semester": "Winter 2019",
@@ -1897,7 +1897,7 @@ var testdata= {
     "Attribute": "Issues-Info, Innovation, Tech"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27297,
     "Category": "Concentration",
     "Semester": "Winter 2019",
@@ -1921,7 +1921,7 @@ var testdata= {
     "Attribute": "Supplemental Writing Skills"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27298,
     "Category": "Concentration",
     "Semester": "Winter 2019",
@@ -1945,7 +1945,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27305,
     "Category": "Concentration",
     "Semester": "Winter 2019",
@@ -1969,7 +1969,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 30893,
     "Category": "Electives",
     "Semester": "Winter 2019",
@@ -1993,7 +1993,7 @@ var testdata= {
     "Attribute": "Issues-Info, Innovation, Tech"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 32049,
     "Category": "Electives",
     "Semester": "Winter 2019",
@@ -2017,7 +2017,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 32050,
     "Category": "Electives",
     "Semester": "Winter 2019",
@@ -2041,7 +2041,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 32737,
     "Category": "Electives",
     "Semester": "Winter 2019",
@@ -2065,7 +2065,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 33845,
     "Category": "Electives",
     "Semester": "Winter 2019",
@@ -2089,7 +2089,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 28495,
     "Category": "Electives",
     "Semester": "Winter 2019",
@@ -2113,7 +2113,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27310,
     "Category": "Core",
     "Semester": "Winter 2019",
@@ -2137,7 +2137,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27314,
     "Category": "Core",
     "Semester": "Winter 2019",
@@ -2161,7 +2161,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27341,
     "Category": "Core",
     "Semester": "Winter 2019",
@@ -2185,7 +2185,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27345,
     "Category": "Core",
     "Semester": "Winter 2019",
@@ -2209,7 +2209,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27346,
     "Category": "Core",
     "Semester": "Winter 2019",
@@ -2233,7 +2233,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27348,
     "Category": "Core",
     "Semester": "Winter 2019",
@@ -2257,7 +2257,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27349,
     "Category": "Capstone",
     "Semester": "Winter 2019",
@@ -2281,7 +2281,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27350,
     "Category": "Capstone",
     "Semester": "Winter 2019",
@@ -2305,7 +2305,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27351,
     "Category": "Capstone",
     "Semester": "Winter 2019",
@@ -2329,7 +2329,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27353,
     "Category": "Capstone",
     "Semester": "Winter 2019",
@@ -2353,7 +2353,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27354,
     "Category": "Capstone",
     "Semester": "Winter 2019",
@@ -2377,7 +2377,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 30809,
     "Category": "Capstone",
     "Semester": "Winter 2019",
@@ -2401,7 +2401,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27355,
     "Category": "Capstone",
     "Semester": "Winter 2019",
@@ -2425,7 +2425,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 29254,
     "Category": "Foundation Courses",
     "Semester": "Winter 2019",
@@ -2449,7 +2449,7 @@ var testdata= {
     "Attribute": "Life Sciences with lab"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27850,
     "Category": "Core",
     "Semester": "Winter 2019",
@@ -2473,7 +2473,7 @@ var testdata= {
     "Attribute": "Physical Science with lab"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 34597,
     "Category": "Concentration",
     "Semester": "Winter 2019",
@@ -2497,7 +2497,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 34483,
     "Category": "Electives",
     "Semester": "Winter 2019",
@@ -2521,7 +2521,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 23600,
     "Category": "Capstone",
     "Semester": "Winter 2019",
@@ -2545,7 +2545,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 20065,
     "Category": "Foundation Courses",
     "Semester": "Winter 2019",
@@ -2569,7 +2569,7 @@ var testdata= {
     "Attribute": "World Perspectives and Social Behavioral Sciences-ANT and Social & Behavioral Sciences"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 30042,
     "Category": "Core",
     "Semester": "Winter 2019",
@@ -2593,7 +2593,7 @@ var testdata= {
     "Attribute": "World Perspectives and Social Behavioral Sciences-ANT and Social & Behavioral Sciences and Supplemental Writing Skills"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27872,
     "Category": "Concentration",
     "Semester": "Winter 2019",
@@ -2617,7 +2617,7 @@ var testdata= {
     "Attribute": "Life Sciences without lab"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 32749,
     "Category": "Electives",
     "Semester": "Winter 2019",
@@ -2641,7 +2641,7 @@ var testdata= {
     "Attribute": "US Diversity and Social & Behavioral Sciences"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 31075,
     "Category": "Capstone",
     "Semester": "Winter 2019",
@@ -2665,7 +2665,7 @@ var testdata= {
     "Attribute": "World Perspectives and Social Behavioral Sciences-ANT and Social & Behavioral Sciences and Supplemental Writing Skills"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 20098,
     "Category": "Foundation Courses",
     "Semester": "Winter 2019",
@@ -2689,7 +2689,7 @@ var testdata= {
     "Attribute": "World Perspectives and Historical Perspectives and Honor's College Student"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 20100,
     "Category": "Core",
     "Semester": "Winter 2019",
@@ -2713,7 +2713,7 @@ var testdata= {
     "Attribute": "Life Sciences without lab"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 20104,
     "Category": "Concentration",
     "Semester": "Winter 2019",
@@ -2737,7 +2737,7 @@ var testdata= {
     "Attribute": "US Diversity and Cultural Anthropology and Issues-Identity"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 28727,
     "Category": "Electives",
     "Semester": "Winter 2019",
@@ -2761,7 +2761,7 @@ var testdata= {
     "Attribute": "US Diversity and Cultural Anthropology and Issues-Identity"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 20105,
     "Category": "Capstone",
     "Semester": "Winter 2019",
@@ -2785,7 +2785,7 @@ var testdata= {
     "Attribute": "World Perspectives and Cultural Anthropology and Issues-Identity"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 31628,
     "Category": "Foundation Courses",
     "Semester": "Winter 2019",
@@ -2809,7 +2809,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 31632,
     "Category": "Core",
     "Semester": "Winter 2019",
@@ -2833,7 +2833,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 29548,
     "Category": "Core",
     "Semester": "Winter 2019",
@@ -2857,7 +2857,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 21418,
     "Category": "Core",
     "Semester": "Winter 2019",
@@ -2881,7 +2881,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 32740,
     "Category": "Core",
     "Semester": "Winter 2019",
@@ -2905,7 +2905,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 30726,
     "Category": "Concentration",
     "Semester": "Winter 2019",
@@ -2929,7 +2929,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 21447,
     "Category": "Foundation Courses",
     "Semester": "Winter 2019",
@@ -2953,7 +2953,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 21460,
     "Category": "Concentration",
     "Semester": "Winter 2019",
@@ -2977,7 +2977,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 26422,
     "Category": "Concentration",
     "Semester": "Winter 2019",
@@ -3001,7 +3001,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 34281,
     "Category": "Concentration",
     "Semester": "Winter 2019",
@@ -3025,7 +3025,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 21476,
     "Category": "Electives",
     "Semester": "Winter 2019",
@@ -3049,7 +3049,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 32056,
     "Category": "Electives",
     "Semester": "Winter 2019",
@@ -3073,7 +3073,7 @@ var testdata= {
     "Attribute": "Issues-Sustainability"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 25474,
     "Category": "Foundation Courses",
     "Semester": "Winter 2019",
@@ -3097,7 +3097,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 33853,
     "Category": "Electives",
     "Semester": "Winter 2019",
@@ -3121,7 +3121,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 32058,
     "Category": "Electives",
     "Semester": "Winter 2019",
@@ -3145,7 +3145,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 33795,
     "Category": "Electives",
     "Semester": "Winter 2019",
@@ -3169,7 +3169,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 28083,
     "Category": "Capstone",
     "Semester": "Winter 2019",
@@ -3193,7 +3193,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 28010,
     "Category": "Capstone",
     "Semester": "Winter 2019",
@@ -3217,7 +3217,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 31057,
     "Category": "Foundation Courses",
     "Semester": "Winter 2019",
@@ -3241,7 +3241,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 21547,
     "Category": "Capstone",
     "Semester": "Winter 2019",
@@ -3265,7 +3265,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 33857,
     "Category": "Capstone",
     "Semester": "Winter 2019",
@@ -3289,7 +3289,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 34398,
     "Category": "Capstone",
     "Semester": "Winter 2019",
@@ -3313,7 +3313,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27242,
     "Category": "Foundation Courses",
     "Semester": "Spring 2019",
@@ -3337,7 +3337,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27262,
     "Category": "Foundation Courses",
     "Semester": "Spring 2019",
@@ -3361,7 +3361,7 @@ var testdata= {
     "Attribute": "Mathematical Sciences"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 33838,
     "Category": "Foundation Courses",
     "Semester": "Spring 2019",
@@ -3385,7 +3385,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27281,
     "Category": "Core",
     "Semester": "Spring 2019",
@@ -3409,7 +3409,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 33840,
     "Category": "Core",
     "Semester": "Spring 2019",
@@ -3433,7 +3433,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27284,
     "Category": "Core",
     "Semester": "Spring 2019",
@@ -3457,7 +3457,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27285,
     "Category": "Core",
     "Semester": "Spring 2019",
@@ -3481,7 +3481,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27291,
     "Category": "Concentration",
     "Semester": "Spring 2019",
@@ -3505,7 +3505,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27388,
     "Category": "Concentration",
     "Semester": "Spring 2019",
@@ -3529,7 +3529,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 33842,
     "Category": "Concentration",
     "Semester": "Spring 2019",
@@ -3553,7 +3553,7 @@ var testdata= {
     "Attribute": "Issues-Info, Innovation, Tech"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27297,
     "Category": "Concentration",
     "Semester": "Spring 2019",
@@ -3577,7 +3577,7 @@ var testdata= {
     "Attribute": "Supplemental Writing Skills"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27298,
     "Category": "Concentration",
     "Semester": "Spring 2019",
@@ -3601,7 +3601,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27305,
     "Category": "Concentration",
     "Semester": "Spring 2019",
@@ -3625,7 +3625,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 30893,
     "Category": "Electives",
     "Semester": "Spring 2019",
@@ -3649,7 +3649,7 @@ var testdata= {
     "Attribute": "Issues-Info, Innovation, Tech"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 32049,
     "Category": "Electives",
     "Semester": "Spring 2019",
@@ -3673,7 +3673,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 32050,
     "Category": "Electives",
     "Semester": "Spring 2019",
@@ -3697,7 +3697,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 32737,
     "Category": "Electives",
     "Semester": "Spring 2019",
@@ -3721,7 +3721,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 33845,
     "Category": "Electives",
     "Semester": "Spring 2019",
@@ -3745,7 +3745,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 28495,
     "Category": "Electives",
     "Semester": "Spring 2019",
@@ -3769,7 +3769,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27310,
     "Category": "Core",
     "Semester": "Spring 2019",
@@ -3793,7 +3793,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27314,
     "Category": "Core",
     "Semester": "Spring 2019",
@@ -3817,7 +3817,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27341,
     "Category": "Core",
     "Semester": "Spring 2019",
@@ -3841,7 +3841,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27345,
     "Category": "Core",
     "Semester": "Spring 2019",
@@ -3865,7 +3865,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27346,
     "Category": "Core",
     "Semester": "Spring 2019",
@@ -3889,7 +3889,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27348,
     "Category": "Core",
     "Semester": "Spring 2019",
@@ -3913,7 +3913,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27349,
     "Category": "Capstone",
     "Semester": "Spring 2019",
@@ -3937,7 +3937,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27350,
     "Category": "Capstone",
     "Semester": "Spring 2019",
@@ -3961,7 +3961,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27351,
     "Category": "Capstone",
     "Semester": "Spring 2019",
@@ -3985,7 +3985,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27353,
     "Category": "Capstone",
     "Semester": "Spring 2019",
@@ -4009,7 +4009,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27354,
     "Category": "Capstone",
     "Semester": "Spring 2019",
@@ -4033,7 +4033,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 30809,
     "Category": "Capstone",
     "Semester": "Summer 2019",
@@ -4057,7 +4057,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27355,
     "Category": "Capstone",
     "Semester": "Summer 2019",
@@ -4081,7 +4081,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 29254,
     "Category": "Foundation Courses",
     "Semester": "Summer 2019",
@@ -4105,7 +4105,7 @@ var testdata= {
     "Attribute": "Life Sciences with lab"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27850,
     "Category": "Core",
     "Semester": "Summer 2019",
@@ -4129,7 +4129,7 @@ var testdata= {
     "Attribute": "Physical Science with lab"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 34597,
     "Category": "Concentration",
     "Semester": "Summer 2019",
@@ -4153,7 +4153,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 34483,
     "Category": "Electives",
     "Semester": "Summer 2019",
@@ -4177,7 +4177,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 23600,
     "Category": "Capstone",
     "Semester": "Summer 2019",
@@ -4201,7 +4201,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 20065,
     "Category": "Foundation Courses",
     "Semester": "Summer 2019",
@@ -4225,7 +4225,7 @@ var testdata= {
     "Attribute": "World Perspectives and Social Behavioral Sciences-ANT and Social & Behavioral Sciences"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 30042,
     "Category": "Core",
     "Semester": "Summer 2019",
@@ -4249,7 +4249,7 @@ var testdata= {
     "Attribute": "World Perspectives and Social Behavioral Sciences-ANT and Social & Behavioral Sciences and Supplemental Writing Skills"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 27872,
     "Category": "Concentration",
     "Semester": "Summer 2019",
@@ -4273,7 +4273,7 @@ var testdata= {
     "Attribute": "Life Sciences without lab"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 32749,
     "Category": "Electives",
     "Semester": "Summer 2019",
@@ -4297,7 +4297,7 @@ var testdata= {
     "Attribute": "US Diversity and Social & Behavioral Sciences"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 31075,
     "Category": "Capstone",
     "Semester": "Summer 2019",
@@ -4321,7 +4321,7 @@ var testdata= {
     "Attribute": "World Perspectives and Social Behavioral Sciences-ANT and Social & Behavioral Sciences and Supplemental Writing Skills"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 20098,
     "Category": "Foundation Courses",
     "Semester": "Summer 2019",
@@ -4345,7 +4345,7 @@ var testdata= {
     "Attribute": "World Perspectives and Historical Perspectives and Honor's College Student"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 20100,
     "Category": "Core",
     "Semester": "Summer 2019",
@@ -4369,7 +4369,7 @@ var testdata= {
     "Attribute": "Life Sciences without lab"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 20104,
     "Category": "Concentration",
     "Semester": "Summer 2019",
@@ -4393,7 +4393,7 @@ var testdata= {
     "Attribute": "US Diversity and Cultural Anthropology and Issues-Identity"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 28727,
     "Category": "Electives",
     "Semester": "Summer 2019",
@@ -4417,7 +4417,7 @@ var testdata= {
     "Attribute": "US Diversity and Cultural Anthropology and Issues-Identity"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 20105,
     "Category": "Capstone",
     "Semester": "Summer 2019",
@@ -4441,7 +4441,7 @@ var testdata= {
     "Attribute": "World Perspectives and Cultural Anthropology and Issues-Identity"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 31628,
     "Category": "Foundation Courses",
     "Semester": "Summer 2019",
@@ -4465,7 +4465,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 31632,
     "Category": "Core",
     "Semester": "Summer 2019",
@@ -4489,7 +4489,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 29548,
     "Category": "Core",
     "Semester": "Summer 2019",
@@ -4513,7 +4513,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 21418,
     "Category": "Core",
     "Semester": "Summer 2019",
@@ -4537,7 +4537,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 32740,
     "Category": "Core",
     "Semester": "Summer 2019",
@@ -4561,7 +4561,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 30726,
     "Category": "Concentration",
     "Semester": "Summer 2019",
@@ -4585,7 +4585,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 21447,
     "Category": "Foundation Courses",
     "Semester": "Summer 2019",
@@ -4609,7 +4609,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 21460,
     "Category": "Concentration",
     "Semester": "Summer 2019",
@@ -4633,7 +4633,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 26422,
     "Category": "Concentration",
     "Semester": "Summer 2019",
@@ -4657,7 +4657,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 34281,
     "Category": "Concentration",
     "Semester": "Summer 2019",
@@ -4681,7 +4681,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 21476,
     "Category": "Electives",
     "Semester": "Summer 2019",
@@ -4705,7 +4705,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 32056,
     "Category": "Electives",
     "Semester": "Summer 2019",
@@ -4729,7 +4729,7 @@ var testdata= {
     "Attribute": "Issues-Sustainability"
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 25474,
     "Category": "Foundation Courses",
     "Semester": "Summer 2019",
@@ -4753,7 +4753,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 33853,
     "Category": "Electives",
     "Semester": "Summer 2019",
@@ -4777,7 +4777,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 32058,
     "Category": "Electives",
     "Semester": "Summer 2019",
@@ -4801,7 +4801,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 33795,
     "Category": "Electives",
     "Semester": "Summer 2019",
@@ -4825,7 +4825,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 28083,
     "Category": "Capstone",
     "Semester": "Summer 2019",
@@ -4849,7 +4849,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 28010,
     "Category": "Capstone",
     "Semester": "Summer 2019",
@@ -4873,7 +4873,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 31057,
     "Category": "Foundation Courses",
     "Semester": "Summer 2019",
@@ -4897,7 +4897,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 21547,
     "Category": "Capstone",
     "Semester": "Summer 2019",
@@ -4921,7 +4921,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 33857,
     "Category": "Capstone",
     "Semester": "Summer 2019",
@@ -4945,7 +4945,7 @@ var testdata= {
     "Attribute": ""
   },
   {
-    "Select": "<input type=\"checkbox\"/>",
+    "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
     "CRN": 34398,
     "Category": "Capstone",
     "Semester": "Summer 2019",
@@ -4975,7 +4975,7 @@ var testdata= {
     var testdata1= {
     "data" : [
       {
-        "Select": "<input type=\"checkbox\"/>",
+        "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
         "CRN": 27242,
         "Category": "Foundation Courses",
         "Semester": "Fall 2018",
@@ -4999,7 +4999,7 @@ var testdata= {
         "Attribute": ""
       },
       {
-        "Select": "<input type=\"checkbox\"/>",
+        "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
         "CRN": 27262,
         "Category": "Foundation Courses",
         "Semester": "Fall 2018",
@@ -5023,7 +5023,7 @@ var testdata= {
         "Attribute": "Mathematical Sciences"
       },
       {
-        "Select": "<input type=\"checkbox\"/>",
+        "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
         "CRN": 33838,
         "Category": "Foundation Courses",
         "Semester": "Fall 2018",
@@ -5047,7 +5047,7 @@ var testdata= {
         "Attribute": ""
       },
       {
-        "Select": "<input type=\"checkbox\"/>",
+        "Select": "<input class=\"selcheck\" type=\"checkbox\"/>",
         "CRN": 27281,
         "Category": "Core",
         "Semester": "Fall 2018",

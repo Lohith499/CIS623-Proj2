@@ -67,7 +67,11 @@
 
       }
 
-
+		/*	$(".selcheck input").on("change", function() {
+				if (this.checked) {
+					alert("i am checked!");
+				}
+			});*/
 
 
               var table1 = $('#example1').DataTable({
@@ -146,6 +150,13 @@
 
 
 
+
+					  $('#example tbody').off('click', 'td.details-control');
+
+					/*	$('#example tbody td').on('check', 'td.selcheck', function () {
+						alert("hii");
+							document.getElementById('benroll').style.display='block';
+						});*/
           // Add event listener for opening and closing details
           $('#example tbody').on('click', 'td.details-control', function () {
               var tr = $(this).closest('tr');
@@ -183,13 +194,14 @@
 				if (sessionStorage.semester=='None' || document.getElementById('selectSem').value=='None' ){
 					alert('Select Semester first');
 					document.getElementById("searchDiscipline").value='None';
-
+					document.getElementById('semblock').style.display='block';
+					document.getElementById('courseblock').style.display='none';
 					return;
 
 				}
        sCategory=document.getElementById("searchDiscipline").value;
 
-      alert(sCategory);
+
        var destArr=[];
        var j=0;
       if(sCategory=="None") {
@@ -342,6 +354,8 @@
 					alert('Select Semester first');
 					document.getElementById("searchDiscipline").value='None';
 					document.getElementById("searchCategory").value='None';
+					document.getElementById('semblock').style.display='block';
+					document.getElementById('courseblock').style.display='none';
 					return;
 				}
 
@@ -419,20 +433,28 @@
 
 
       function clearArray(array) {
-      while (array.length) {
-      array.pop();
-      }
+
       }
 
       //Advance Search start
       function advanceSearch() {
+
+				if (sessionStorage.semester=='None' || document.getElementById('selectSem').value=='None' ){
+					alert('Select Semester first');
+					document.getElementById("searchDiscipline").value='None';
+					document.getElementById("searchCategory").value='None';
+					document.getElementById('semblock').style.display='block';
+					document.getElementById('courseblock').style.display='none';
+					return;
+				}
 
       var sDiscipline=document.getElementById("isearchDiscipline").value;
       var sCategory=document.getElementById("isearchCategory").value;
       var sCamp=document.getElementById("isearchCamp").value;
       var sIns=document.getElementById("iInstructor").value;
       var wValues= $('#iWeekdays').val();
-      alert(sDiscipline+sCategory+sCamp+sIns+wValues.length+wValues);
+
+			alert(sDiscipline+sCategory+sCamp+sIns+wValues.length+wValues);
 
       var destArr=[];
       var j=0;
@@ -450,7 +472,9 @@
 
 
       clearArray(srcArr);
+			srcArr=[];
       srcArr=destArr;
+			destArr=[];
       j=0;
 
       if(sCategory=='None') {
@@ -467,7 +491,9 @@
 
 
       clearArray(srcArr);
+			srcArr=[];
       srcArr=destArr;
+			destArr=[];
       j=0;
       if(sIns=='None') {
       destArr=srcArr;
@@ -484,7 +510,9 @@
 
 
       clearArray(srcArr);
+			srcArr=[];
       srcArr=destArr;
+			destArr=[];
       if(sCamp=='None') {
       destArr=srcArr;
       } else {
@@ -498,7 +526,9 @@
 
 
       clearArray(srcArr);
+			srcArr=[];
       srcArr=destArr;
+			destArr=[];
       j=0;
       if(wValues.length==0) {
       destArr=srcArr;
@@ -543,6 +573,7 @@
       });
 			onSemChange();
       $('#example tbody').off('click', 'td.details-control');
+
 
       // Add event listener for opening and closing details
       $('#example tbody').on('click', 'td.details-control', function () {
@@ -636,10 +667,7 @@
 								 if (cell.tagName == 'TD') cell.style.display = 'none';
 								 if (cell.tagName == 'TH') cell.style.display = 'none';
 					 }
-
-
 			}
-
       }
 
       function logoff() {
@@ -942,7 +970,7 @@
                      </tr>
                   </tfoot>
                </table>
-							 <button class="dd" id="benroll" type="button" name="button" style="font-size: 15px;color: #fff;border: 2px solid #4caf50;padding: 5px;font-weight: bold;background: #1d74ba;margin-left: 40%;width:250px;" onclick="alert('Enrolled successfully');lSearch4();">Enroll</button>
+							 <button class="dd" id="benroll" type="button" name="button" style="display:block;font-size: 15px;color: #fff;border: 2px solid #4caf50;padding: 5px;font-weight: bold;background: #1d74ba;margin-left: 40%;width:250px;" onclick="alert('Enrolled successfully');lSearch4();">Enroll</button>
             </div>
          </div>
       </div>
