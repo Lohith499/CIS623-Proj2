@@ -23,7 +23,7 @@
    <script>
       $(document).ready(function () {
       if(sessionStorage.Usertype == "FreOrSop") {
-    
+
 			document.getElementById('searchmaindiv').style.display='block';
 			document.getElementById('enrollmaindiv').style.display='none';
 			document.getElementById('advanceuser').style.display='none';
@@ -63,10 +63,11 @@
 			document.getElementById('enrollmaindiv').style.display='none';
 			document.getElementById('advanceuser').style.display='block';
 			document.getElementById('Search4').style.display='none';
+			document.getElementById('benroll').style.display='none';
+
       }
 
-      document.getElementById('divDis').style.display='none';
-      document.getElementById('divCat').style.display='none';
+
 
 
               var table1 = $('#example1').DataTable({
@@ -177,7 +178,17 @@
 
 
       function onDisciplineChange() {
+
+
+				if (sessionStorage.semester=='None' || document.getElementById('selectSem').value=='None' ){
+					alert('Select Semester first');
+					document.getElementById("searchDiscipline").value='None';
+
+					return;
+
+				}
        sCategory=document.getElementById("searchDiscipline").value;
+
       alert(sCategory);
        var destArr=[];
        var j=0;
@@ -249,7 +260,9 @@
 
       }
 
-      function onDisciplineChange() {
+    /*  function onDisciplineChange() {
+
+
       sCategory=document.getElementById("searchDiscipline").value;
 
       var destArr=[];
@@ -289,7 +302,7 @@
       ],
       "order": [[1, 'asc']]
       });
-
+		onSemChange();
       $('#example tbody').off('click', 'td.details-control');
 
       // Add event listener for opening and closing details
@@ -320,10 +333,18 @@
       }
       });
       }
-
+*/
 
 
       function onCategoryChange() {
+
+				if (sessionStorage.semester=='None' || document.getElementById('selectSem').value=='None' ){
+					alert('Select Semester first');
+					document.getElementById("searchDiscipline").value='None';
+					document.getElementById("searchCategory").value='None';
+					return;
+				}
+
       sCategory=document.getElementById("searchCategory").value;
       sDiscipline=document.getElementById("searchDiscipline").value;
 
@@ -364,7 +385,7 @@
       ],
       "order": [[1, 'asc']]
       });
-
+			onSemChange();
       $('#example tbody').off('click', 'td.details-control');
 
       // Add event listener for opening and closing details
@@ -520,7 +541,7 @@
       ],
       "order": [[1, 'asc']]
       });
-
+			onSemChange();
       $('#example tbody').off('click', 'td.details-control');
 
       // Add event listener for opening and closing details
@@ -601,6 +622,24 @@
 
       function onSemChange(){
       sessionStorage.semester = document.getElementById('selectSem').value;
+			document.getElementById('semblock').style.display='none';
+			document.getElementById('courseblock').style.display='block';
+			if(sessionStorage.Usertype == "Teacher") {
+				document.getElementById('welcometext').innerHTML="Search for various course details";
+
+//hiding select column values for teacher
+					var tbl = document.getElementById('example');
+	 				var rows = tbl.getElementsByTagName('tr');
+				 	for (var row = 0; row < rows.length; row++) {
+						 var cols = rows[row].children;
+								 var cell = cols[1];
+								 if (cell.tagName == 'TD') cell.style.display = 'none';
+								 if (cell.tagName == 'TH') cell.style.display = 'none';
+					 }
+
+
+			}
+
       }
 
       function logoff() {
@@ -865,7 +904,7 @@
             </div>
          </div>
          <div class="coursedata" id="icoursedata">
-            <div class="selectSem" style="display:none;">
+            <div class="selectSem" id="semblock" style="display:block;">
                <p id="header2" style="top:30%;text-align:center;">Select your Semester</p>
                <div class="login-box">
                   <div class="select" style="width:100%;top:0px;">
@@ -879,8 +918,8 @@
                   </div>
                </div>
             </div>
-            <div class="coursedetails" style="display:block;">
-               <h4 class="text-primary"> Select the courses you would like to register and click on Enroll at bottom</h4>
+            <div class="coursedetails" id="courseblock" style="display:none;">
+               <h4 id="welcometext" class="text-primary"> Select the courses you would like to register and click on Enroll at bottom</h4>
                <table width="100%" class="display" id="example" cellspacing="2px" style="padding-top:15px;">
                   <thead>
                      <tr>
@@ -903,10 +942,8 @@
                      </tr>
                   </tfoot>
                </table>
+							 <button class="dd" id="benroll" type="button" name="button" style="font-size: 15px;color: #fff;border: 2px solid #4caf50;padding: 5px;font-weight: bold;background: #1d74ba;margin-left: 40%;width:250px;" onclick="alert('Enrolled successfully');lSearch4();">Enroll</button>
             </div>
-						<button class="dd" type="button" name="button" style="font-size: 15px;color: #fff;border: 2px solid #4caf50;padding: 5px;font-weight: bold;background: #1d74ba;margin-left: 40%;width:250px;" onclick="alert('Enrolled successfully');lSearch4();">Enroll</button>
-
-
          </div>
       </div>
       <div class="enrolleddetails" id="enrollmaindiv" style="display:none;width:100%;background-color: #DCF2EE">
