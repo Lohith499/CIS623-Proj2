@@ -23,14 +23,45 @@
    <script>
       $(document).ready(function () {
       if(sessionStorage.Usertype == "FreOrSop") {
-      document.getElementById('Search1').className='active';
-			lSearch1();
+    
+			document.getElementById('searchmaindiv').style.display='block';
+			document.getElementById('enrollmaindiv').style.display='none';
+			document.getElementById('advanceuser').style.display='none';
+			document.getElementById('divCat').style.display='block';
+			document.getElementById('divDis').style.display='block';
+			document.getElementById('Search2').className='';
+			document.getElementById('Search3').className='';
+			document.getElementById('Search4').className='';
+			document.getElementById('Search1').className='active';
+			document.getElementById('hmore1').style.display='none';
+
       } else if(sessionStorage.Usertype == "OtherStudent") {
       document.getElementById('Search2').className='active';
-			lSearch2();
+			document.getElementById('hmore1').style.display='block';
+			document.getElementById('searchmaindiv').style.display='block';
+			document.getElementById('divCat').style.display='none';
+			document.getElementById('divDis').style.display='block';
+			document.getElementsByClassName('links').className='';
+			document.getElementById('advanceuser').style.display='none';
+			document.getElementById('enrollmaindiv').style.display='none';
+			document.getElementById('Search1').className='';
+			document.getElementById('Search3').className='';
+			document.getElementById('Search4').className='';
+			document.getElementById('Search2').className='active';
+				document.getElementById('hmore1').style.display='block';
+
       } else if(sessionStorage.Usertype == "Teacher") {
       document.getElementById('Search3').className='active';
-			lSearch3();
+			document.getElementById('searchmaindiv').style.display='block';
+			document.getElementById('divCat').style.display='none';
+			document.getElementById('divDis').style.display='none';
+			document.getElementsByClassName('links').className='';
+			document.getElementById('Search1').className='';
+			document.getElementById('Search2').className='';
+			document.getElementById('Search4').className='';
+			document.getElementById('Search3').className='active';
+			document.getElementById('enrollmaindiv').style.display='none';
+			document.getElementById('advanceuser').style.display='block';
 			document.getElementById('Search4').style.display='none';
       }
 
@@ -656,7 +687,6 @@
       	document.getElementById('Search1').className='';
       	document.getElementById('Search2').className='';
       	document.getElementById('Search3').className='';
-
       	document.getElementById('Search4').className='active';
       }
 
