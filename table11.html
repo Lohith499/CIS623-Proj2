@@ -796,6 +796,12 @@
 			document.getElementById('hmore2').style.display='none';
 		}
 
+		function changeSem(){
+		
+			sessionStorage.semester='None';
+			window.location.replace("table11.html");
+		}
+
       function lSearch1(){
 
       	document.getElementById('searchmaindiv').style.display='block';
@@ -826,7 +832,8 @@
          <a href="#SearchByCategory" class="links" id="Search1" onclick="lSearch1()">Search By Category</a>
          <a href="#AdvanceSearch" class="links" id="Search3" onclick="lSearch3()" >Advance Search</a>
          <a href="#EnrolledCourse" class="links" id="Search4" onclick="lSearch4()">Enrolled Course</a>
-         <a href="#about" onclick="logoff()" class="links" >Log Off</a>
+         <a href="#about" onclick="changeSem()" class="links" >Change Semester</a>
+				 <a href="#about" onclick="logoff()" class="links" >Log Off</a>
          <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
       </div>
       <div class="row" id="searchmaindiv" style="margin-left:0px;margin-right:0px;background-color: #DCF2EE;border-bottom: 3px solid red;">
