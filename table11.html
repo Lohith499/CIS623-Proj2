@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="description" content="Child Rows">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="\css\style.css">
+      <link rel="stylesheet" href="\css\navbar.css">
+      <link rel="stylesheet" href="\css\select.css">
+      <script src="/js/testdata.js" charset="utf-8"></script>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js" charset="utf-8"></script>
+      <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" charset="utf-8"></script>
+      <title>Document</title>
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+      <link href="https://nightly.datatables.net/css/jquery.dataTables.css" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.js"></script>
+      <script src="https://cdn.datatables.net/select/1.2.1/js/dataTables.select.min.js" type="text/javascript"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   </head>
+   <script>
+      $(document).ready(function () {
+      if(sessionStorage.Usertype == "FreOrSop") {
+      document.getElementById('Search1').className='active';
+			lSearch1();
+      } else if(sessionStorage.Usertype == "OtherStudent") {
+      document.getElementById('Search2').className='active';
+			lSearch2();
+      } else if(sessionStorage.Usertype == "Teacher") {
+      document.getElementById('Search3').className='active';
+			lSearch3();
+			document.getElementById('Search4').style.display='none';
+      }
+
+      document.getElementById('divDis').style.display='none';
+      document.getElementById('divCat').style.display='none';
+
+
+              var table1 = $('#example1').DataTable({
+                  "data": testdata1.data,
+                  select:"single",
+                  "columns": [
+                      {
+                          "className": 'details-control',
+                          "orderable": false,
+                          "data": null,
+                          "defaultContent": '',
+                          "render": function () {
+                              return '<i class="fa fa-plus-square" aria-hidden="true"></i>';
+                          },
+                          width:"15px"
+                      },
+                      { "data": "Select" },
+                      { "data": "CRN" },
+                      { "data": "Subj" },
+                      { "data": "Crse" },
+                      { "data": "Title" }
+                  ],
+                  "order": [[1, 'asc']]
+              });
+
+      			 $('#example1 tbody').on('click', 'td.details-control', function () {
+                  var tr = $(this).closest('tr');
+                  var tdi = tr.find("i.fa");
+                  var row = table1.row(tr);
+
+                  if (row.child.isShown()) {
+                      // This row is already open - close it
+                      row.child.hide();
+                      tr.removeClass('shown');
+                      tdi.first().removeClass('fa-minus-square');
+                      tdi.first().addClass('fa-plus-square');
+                  }
+                  else {
+                      // Open this row
+                      row.child(format(row.data())).show();
+                      tr.addClass('shown');
+                      tdi.first().removeClass('fa-plus-square');
+                      tdi.first().addClass('fa-minus-square');
+                  }
+              });
+
+
+
+
+
+
+      //Course table
+
+          var table = $('#example').DataTable({
+              "data": testdata.data,
+              select:"single",
+              "columns": [
+                  {
+                      "className": 'details-control',
+                      "orderable": false,
+                      "data": null,
+                      "defaultContent": '',
+                      "render": function () {
+                          return '<i class="fa fa-plus-square" aria-hidden="true"></i>';
+                      },
+                      width:"15px"
+                  },
+                  { "data": "Select" },
+                  { "data": "CRN" },
+                  { "data": "Subj" },
+                  { "data": "Crse" },
+                  { "data": "Title" }
+              ],
+              "order": [[1, 'asc']]
+          });
+
+
+
+          // Add event listener for opening and closing details
+          $('#example tbody').on('click', 'td.details-control', function () {
+              var tr = $(this).closest('tr');
+              var tdi = tr.find("i.fa");
+              var row = table.row(tr);
+
+              if (row.child.isShown()) {
+                  // This row is already open - close it
+                  row.child.hide();
+                  tr.removeClass('shown');
+                  tdi.first().removeClass('fa-minus-square');
+                  tdi.first().addClass('fa-plus-square');
+              }
+              else {
+                  // Open this row
+                  row.child(format(row.data())).show();
+                  tr.addClass('shown');
+                  tdi.first().removeClass('fa-plus-square');
+                  tdi.first().addClass('fa-minus-square');
+              }
+          });
+
+          table.on("user-select", function (e, dt, type, cell, originalEvent) {
+              if ($(cell.node()).hasClass("details-control")) {
+                  e.preventDefault();
+              }
+          });
+      });
+
+
+
+      function onDisciplineChange() {
+       sCategory=document.getElementById("searchDiscipline").value;
+      alert(sCategory);
+       var destArr=[];
+       var j=0;
+      if(sCategory=="None") {
+      destArr=testdata.data;
+      } else {
+       var srcArr =testdata.data;
+       for(i in srcArr){
+           if(srcArr[i].Subj==sCategory){
+                 destArr[j]=srcArr[i];
+                 j=j+1;
+               }
+           }
+      }
+
+       $("#example").dataTable().fnDestroy();
+       var table = $('#example').DataTable({
+           "data": destArr,
+           select:"single",
+           "columns": [
+               {
+                   "className": 'details-control',
+                   "orderable": false,
+                   "data": null,
+                   "defaultContent": '',
+                   "render": function () {
+                       return '<i class="fa fa-plus-square" aria-hidden="true"></i>';
+                   },
+                   width:"15px"
+               },
+               { "data": "Select" },
+               { "data": "CRN" },
+               { "data": "Subj" },
+               { "data": "Crse" },
+               { "data": "Title" }
+           ],
+           "order": [[1, 'asc']]
+       });
+
+      $('#example tbody').off('click', 'td.details-control');
+
+       // Add event listener for opening and closing details
+       $('#example tbody').on('click', 'td.details-control', function () {
+           var tr = $(this).closest('tr');
+           var tdi = tr.find("i.fa");
+           var row = table.row(tr);
+
+           if (row.child.isShown()) {
+               // This row is already open - close it
+               row.child.hide();
+               tr.removeClass('shown');
+               tdi.first().removeClass('fa-minus-square');
+               tdi.first().addClass('fa-plus-square');
+           }
+           else {
+               // Open this row
+               row.child(format(row.data())).show();
+               tr.addClass('shown');
+               tdi.first().removeClass('fa-plus-square');
+               tdi.first().addClass('fa-minus-square');
+           }
+       });
+
+       table.on("user-select", function (e, dt, type, cell, originalEvent) {
+           if ($(cell.node()).hasClass("details-control")) {
+               e.preventDefault();
+           }
+       });
+
+      }
+
+      function onDisciplineChange() {
+      sCategory=document.getElementById("searchDiscipline").value;
+
+      var destArr=[];
+      var j=0;
+      if(sCategory=="None") {
+      destArr=testdata.data;
+      } else {
+      var srcArr =testdata.data;
+      for(i in srcArr){
+      if(srcArr[i].Subj==sCategory){
+      			destArr[j]=srcArr[i];
+      			j=j+1;
+      		}
+      }
+      }
+
+      $("#example").dataTable().fnDestroy();
+      var table = $('#example').DataTable({
+      "data": destArr,
+      select:"single",
+      "columns": [
+      		{
+      				"className": 'details-control',
+      				"orderable": false,
+      				"data": null,
+      				"defaultContent": '',
+      				"render": function () {
+      						return '<i class="fa fa-plus-square" aria-hidden="true"></i>';
+      				},
+      				width:"15px"
+      		},
+      		{ "data": "Select" },
+      		{ "data": "CRN" },
+      		{ "data": "Subj" },
+      		{ "data": "Crse" },
+      		{ "data": "Title" }
+      ],
+      "order": [[1, 'asc']]
+      });
+
+      $('#example tbody').off('click', 'td.details-control');
+
+      // Add event listener for opening and closing details
+      $('#example tbody').on('click', 'td.details-control', function () {
+      var tr = $(this).closest('tr');
+      var tdi = tr.find("i.fa");
+      var row = table.row(tr);
+
+      if (row.child.isShown()) {
+      		// This row is already open - close it
+      		row.child.hide();
+      		tr.removeClass('shown');
+      		tdi.first().removeClass('fa-minus-square');
+      		tdi.first().addClass('fa-plus-square');
+      }
+      else {
+      		// Open this row
+      		row.child(format(row.data())).show();
+      		tr.addClass('shown');
+      		tdi.first().removeClass('fa-plus-square');
+      		tdi.first().addClass('fa-minus-square');
+      }
+      });
+
+      table.on("user-select", function (e, dt, type, cell, originalEvent) {
+      if ($(cell.node()).hasClass("details-control")) {
+      		e.preventDefault();
+      }
+      });
+      }
+
+
+
+      function onCategoryChange() {
+      sCategory=document.getElementById("searchCategory").value;
+      sDiscipline=document.getElementById("searchDiscipline").value;
+
+      var destArr=[];
+      var j=0;
+      if(sDiscipline=='None') {
+      destArr=testdata.data;
+      } else {
+      var srcArr =testdata.data;
+      for(i in srcArr){
+      if(srcArr[i].Subj==sDiscipline && srcArr[i].Category==sCategory){
+      			destArr[j]=srcArr[i];
+      			j=j+1;
+      		}
+      }
+      }
+
+      $("#example").dataTable().fnDestroy();
+      var table = $('#example').DataTable({
+      "data": destArr,
+      select:"single",
+      "columns": [
+      		{
+      				"className": 'details-control',
+      				"orderable": false,
+      				"data": null,
+      				"defaultContent": '',
+      				"render": function () {
+      						return '<i class="fa fa-plus-square" aria-hidden="true"></i>';
+      				},
+      				width:"15px"
+      		},
+      		{ "data": "Select" },
+      		{ "data": "CRN" },
+      		{ "data": "Subj" },
+      		{ "data": "Crse" },
+      		{ "data": "Title" }
+      ],
+      "order": [[1, 'asc']]
+      });
+
+      $('#example tbody').off('click', 'td.details-control');
+
+      // Add event listener for opening and closing details
+      $('#example tbody').on('click', 'td.details-control', function () {
+      var tr = $(this).closest('tr');
+      var tdi = tr.find("i.fa");
+      var row = table.row(tr);
+
+      if (row.child.isShown()) {
+      		// This row is already open - close it
+      		row.child.hide();
+      		tr.removeClass('shown');
+      		tdi.first().removeClass('fa-minus-square');
+      		tdi.first().addClass('fa-plus-square');
+      }
+      else {
+      		// Open this row
+      		row.child(format(row.data())).show();
+      		tr.addClass('shown');
+      		tdi.first().removeClass('fa-plus-square');
+      		tdi.first().addClass('fa-minus-square');
+      }
+      });
+
+      table.on("user-select", function (e, dt, type, cell, originalEvent) {
+      if ($(cell.node()).hasClass("details-control")) {
+      		e.preventDefault();
+      }
+      });
+      }
+
+
+      function clearArray(array) {
+      while (array.length) {
+      array.pop();
+      }
+      }
+
+      //Advance Search start
+      function advanceSearch() {
+
+      var sDiscipline=document.getElementById("isearchDiscipline").value;
+      var sCategory=document.getElementById("isearchCategory").value;
+      var sCamp=document.getElementById("isearchCamp").value;
+      var sIns=document.getElementById("iInstructor").value;
+      var wValues= $('#iWeekdays').val();
+      alert(sDiscipline+sCategory+sCamp+sIns+wValues.length+wValues);
+
+      var destArr=[];
+      var j=0;
+      if(sDiscipline=='None') {
+      destArr=testdata.data;
+      } else {
+      var srcArr =testdata.data;
+      for(i in srcArr){
+      if(srcArr[i].Subj==sDiscipline){
+      	destArr[j]=srcArr[i];
+      	j=j+1;
+      }
+      }
+      }
+
+
+      clearArray(srcArr);
+      srcArr=destArr;
+      j=0;
+
+      if(sCategory=='None') {
+      destArr=srcArr;
+      } else {
+      for(i in srcArr){
+      if(srcArr[i].Category==sCategory){
+      	destArr[j]=srcArr[i];
+      	j=j+1;
+      }
+      }
+      }
+
+
+
+      clearArray(srcArr);
+      srcArr=destArr;
+      j=0;
+      if(sIns=='None') {
+      destArr=srcArr;
+      } else {
+
+      for(i in srcArr){
+      if(srcArr[i].Instructor==sIns){
+      	destArr[j]=srcArr[i];
+      	j=j+1;
+      }
+      }
+      }
+
+
+
+      clearArray(srcArr);
+      srcArr=destArr;
+      if(sCamp=='None') {
+      destArr=srcArr;
+      } else {
+      for(i in srcArr){
+      if(srcArr[i].Cmp==sIns){
+      	destArr[j]=srcArr[i];
+      	j=j+1;
+      }
+      }
+      }
+
+
+      clearArray(srcArr);
+      srcArr=destArr;
+      j=0;
+      if(wValues.length==0) {
+      destArr=srcArr;
+      } else {
+
+      for(i in srcArr){
+      for (k = 0; k < wValues.length; k++)
+      if(srcArr[i].search(wValues[k])!=-1){
+      	destArr[j]=srcArr[i];
+      	j=j+1;
+      	break;
+      }
+      }
+      }
+
+
+
+
+
+      $("#example").dataTable().fnDestroy();
+      var table = $('#example').DataTable({
+      "data": destArr,
+      select:"single",
+      "columns": [
+      {
+      		"className": 'details-control',
+      		"orderable": false,
+      		"data": null,
+      		"defaultContent": '',
+      		"render": function () {
+      				return '<i class="fa fa-plus-square" aria-hidden="true"></i>';
+      		},
+      		width:"15px"
+      },
+      { "data": "Select" },
+      { "data": "CRN" },
+      { "data": "Subj" },
+      { "data": "Crse" },
+      { "data": "Title" }
+      ],
+      "order": [[1, 'asc']]
+      });
+
+      $('#example tbody').off('click', 'td.details-control');
+
+      // Add event listener for opening and closing details
+      $('#example tbody').on('click', 'td.details-control', function () {
+      var tr = $(this).closest('tr');
+      var tdi = tr.find("i.fa");
+      var row = table.row(tr);
+
+      if (row.child.isShown()) {
+      // This row is already open - close it
+      row.child.hide();
+      tr.removeClass('shown');
+      tdi.first().removeClass('fa-minus-square');
+      tdi.first().addClass('fa-plus-square');
+      }
+      else {
+      // Open this row
+      row.child(format(row.data())).show();
+      tr.addClass('shown');
+      tdi.first().removeClass('fa-plus-square');
+      tdi.first().addClass('fa-minus-square');
+      }
+      });
+
+      table.on("user-select", function (e, dt, type, cell, originalEvent) {
+      if ($(cell.node()).hasClass("details-control")) {
+      e.preventDefault();
+      }
+      });
+      }
+
+
+      //Advance Search Ends
+
+
+      function format(d){
+
+          // `d` is the original data object for the row
+          return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">' +
+              '<tr>' +
+                  '<td>Credits:</td>' +
+                  '<td>' + d.Cred + '</td>' +
+              '</tr>' +
+              '<tr>' +
+                  '<td>Days:</td>' +
+                  '<td>' + d.Days + '</td>' +
+              '</tr>' +
+              '<tr>' +
+                  '<td>Time:</td>' +
+                  '<td>' + d.Time + '</td>' +
+              '</tr>' +
+              '<tr>' +
+                  '<td>Instructor:</td>' +
+                  '<td>' + d.Instructor + '</td>' +
+              '</tr>' +
+              '<tr>' +
+                  '<td>Course Duration:</td>' +
+                  '<td>' + d.DateMMDD + '</td>' +
+              '</tr>' +
+              '<tr>' +
+                  '<td>Location:</td>' +
+                  '<td>' + d.Location + '</td>' +
+              '</tr>' +
+              '<tr>' +
+                  '<td>Preq Exists:</td>' +
+                  '<td>' + d.PreqExists + '</td>' +
+              '</tr>' +
+      	 '<tr>' +
+                  '<td>Category:</td>' +
+                  '<td>' + d.Category + '</td>' +
+              '</tr>' +
+              '<tr>' +
+                  '<td>Attribute:</td>' +
+                  '<td>' + d.Attribute + '</td>' +
+              '</tr>' +
+          '</table>';
+      }
+
+      function onSemChange(){
+      sessionStorage.semester = document.getElementById('selectSem').value;
+      }
+
+      function logoff() {
+
+      sessionStorage.clear();
+      alert("logged off successfully");
+      window.location.replace('index.html');
+
+      }
+   </script>
+   <style>
+      td.details-control {
+      text-align:center;
+      color:forestgreen;
+      cursor: pointer;
+      }
+      tr.shown td.details-control {
+      text-align:center;
+      color:red;
+      }
+   </style>
+   <style>
+      .menusearch {
+      width: 20%;
+      float: left;
+      padding: 0px;
+      background-color: #DCF2EE;
+      }
+      .coursedata {
+      width: 78%;
+      float: left;
+      padding: 0px;
+      border-left: 3px solid red;
+      background-color: #DCF2EE;
+      }
+      @media only screen and (max-width: 500px) {
+      .menusearch {
+      width: 100%;
+      float: none;
+      }
+      .coursedata{
+      width: 100%;
+      float: none;
+      }
+      }
+   </style>
+   <style>
+      .select-style {
+      border: 1px solid #ccc;
+      width: 100%;
+      border-radius: 3px;
+      overflow: hidden;
+      background: #fafafa url("images/icon-select.png") no-repeat 90% 50%;
+      }
+      .select-style select {
+      padding: 5px 8px;
+      width: 100%;
+      border: none;
+      box-shadow: none;
+      background: transparent;
+      background-image: none;
+      -webkit-appearance: none;
+      }
+      .select-style select:focus {
+      outline: none;
+      }
+   </style>
+   <script>
+      function myFunction() {
+          var x = document.getElementById("myNavbar");
+
+          if (x.className === "navbar") {
+              x.className += " responsive";
+          } else {
+              x.className = "navbar";
+          }
+      }
+
+      function lSearch4(){
+      	document.getElementById('divCat').style.display='none';
+      	document.getElementById('searchmaindiv').style.display='none';
+      	document.getElementById('enrollmaindiv').style.display='block';
+      	document.getElementsByClassName('links').className='';
+      	document.getElementById('Search1').className='';
+      	document.getElementById('Search2').className='';
+      	document.getElementById('Search3').className='';
+
+      	document.getElementById('Search4').className='active';
+      }
+
+
+      function lSearch3(){
+      	document.getElementById('searchmaindiv').style.display='block';
+      	document.getElementById('divCat').style.display='none';
+				document.getElementById('divDis').style.display='none';
+      	document.getElementsByClassName('links').className='';
+      	document.getElementById('Search1').className='';
+      	document.getElementById('Search2').className='';
+      	document.getElementById('Search4').className='';
+      	document.getElementById('Search3').className='active';
+      	document.getElementById('enrollmaindiv').style.display='none';
+      	document.getElementById('advanceuser').style.display='block';
+      }
+
+      function lSearch2(){
+				document.getElementById('hmore1').style.display='block';
+      	document.getElementById('searchmaindiv').style.display='block';
+      	document.getElementById('divCat').style.display='none';
+				document.getElementById('divDis').style.display='block';
+      	document.getElementsByClassName('links').className='';
+      	document.getElementById('advanceuser').style.display='none';
+      	document.getElementById('enrollmaindiv').style.display='none';
+      	document.getElementById('Search1').className='';
+      	document.getElementById('Search3').className='';
+      	document.getElementById('Search4').className='';
+      	document.getElementById('Search2').className='active';
+					document.getElementById('hmore1').style.display='block';
+      }
+
+		function more1(){
+			lSearch1();
+			document.getElementById('hmore1').style.display='none';
+		}
+
+		function more2(){
+			lSearch3();
+			document.getElementById('hmore2').style.display='none';
+		}
+
+      function lSearch1(){
+
+      	document.getElementById('searchmaindiv').style.display='block';
+      	document.getElementById('enrollmaindiv').style.display='none';
+      	document.getElementById('advanceuser').style.display='none';
+      	document.getElementById('divCat').style.display='block';
+      	document.getElementById('divDis').style.display='block';
+      	document.getElementById('Search2').className='';
+      	document.getElementById('Search3').className='';
+      	document.getElementById('Search4').className='';
+      	document.getElementById('Search1').className='active';
+				document.getElementById('hmore1').style.display='none';
+      }
+
+
+
+
+   </script>
+   <body>
+      <div id="gvsu-logo" style=" padding:0;margin:0;background: #1d74ba;color: #fff;">
+         <p id="header" style="padding:0; margin:0;text-align:center;"> Grand Valley State University </p>
+      </div>
+      <div style=" padding:0; margin:0;">
+         <p id="header1" style="background-color: #B3C0F0  ;padding:0; margin:0;text-align:center;">Schedule Manager</p>
+      </div>
+      <div class="navbar" id="myNavbar" style="padding:0; margin:0;">
+         <a href="#SearchByDiscipline" class="links" id="Search2" onclick="lSearch2()">Search By Discipline</a>
+         <a href="#SearchByCategory" class="links" id="Search1" onclick="lSearch1()">Search By Category</a>
+         <a href="#AdvanceSearch" class="links" id="Search3" onclick="lSearch3()" >Advance Search</a>
+         <a href="#EnrolledCourse" class="links" id="Search4" onclick="lSearch4()">Enrolled Course</a>
+         <a href="#about" onclick="logoff()" class="links" >Log Off</a>
+         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+      <div class="row" id="searchmaindiv" style="margin-left:0px;margin-right:0px;background-color: #DCF2EE;border-bottom: 3px solid red;">
+         <div class="menusearch" id="imenusearch">
+            <h4 class="text-primary" > Search using below Filter</h4>
+            <div class="search1_1" id="divDis" style="overflow:auto;margin: 15px;">
+               <h4 style="padding:0; margin:0;">*Discipline*</h4>
+               <div class="select" style="width:100%;">
+                  <select class="slct" name="slct" id="searchDiscipline" onchange="onDisciplineChange()">
+                     <option value="None">NONE</option>
+                     <option value="CIS">COMPUTER INFORMATION SYSTEM</option>
+                     <option value="SCI">SCIENCE</option>
+                     <option value="ANT">ANTHROPOLOGY</option>
+                     <option value="EGR">ENGINEERING</option>
+                  </select>
+               </div>
+               <h4 id="hmore1" style="padding:15px; margin:1px;" onclick="more1();">More <img src="/images/drop.png" alt="" width:"20px" height="20px;"></h4>
+            </div>
+            <div class="search1_1" id="divCat" style="overflow:auto;margin: 15px;">
+               <h4 style="padding:0; margin:0;">*Category*</h4>
+               <div class="select" style="width:100%;">
+                  <select class="slct" name="slct" id="searchCategory" onchange="onCategoryChange()">
+                     <option value="None">NONE</option>
+                     <option value="Foundation Courses">Foundation Courses</option>
+                     <option value="Core">Core</option>
+                     <option value="Concentration">Concentration</option>
+                     <option value="Electives">Electives</option>
+                     <option value="Capstone">Capstone</option>
+                  </select>
+               </div>
+							 <h4 id="hmore2" style="padding:15px; margin:1px;" onclick="more2();">More <img src="/images/drop.png" alt="" width:"20px" height="20px;"></h4>
+            </div>
+            <!--Advance User-->
+            <div id="advanceuser">
+               <div class="search1_3" style="overflow:auto;margin: 15px;">
+                  <h4 style="padding:0; margin:0;">Discipline</h4>
+                  <div class="select" style="width:100%;">
+                     <select class="slct" name="slct" id="isearchDiscipline" onchange="">
+                        <option value="None">NONE</option>
+                        <option value="CIS">COMPUTER INFORMATION SYSTEM</option>
+                        <option value="SCI">SCIENCE</option>
+                        <option value="ANT">ANTHROPOLOGY</option>
+                        <option value="EGR">ENGINEERING</option>
+                     </select>
+                  </div>
+               </div>
+               <div class="search1_3" id="divCat" style="overflow:auto;margin: 15px;">
+                  <h4 style="padding:0; margin:0;">Category</h4>
+                  <div class="select" style="width:100%;">
+                     <select class="slct" name="slct" id="isearchCategory" onchange="()">
+                        <option value="None">NONE</option>
+                        <option value="Foundation Courses">Foundation Courses</option>
+                        <option value="Core">Core</option>
+                        <option value="Concentration">Concentration</option>
+                        <option value="Electives">Electives</option>
+                        <option value="Capstone">Capstone</option>
+                     </select>
+                  </div>
+               </div>
+               <div class="search1_3" id="divCat1_1" style="overflow:auto;margin: 15px;">
+                  <h4 style="padding:0; margin:0;">Instructor</h4>
+                  <div class="select" style="width:100%;height:2em; line-height: 2;">
+                     <select class="slct" name="slct" id="iInstructor" onchange="">
+                        <option value="None">NONE</option>
+                        <option value="Jie Du (P)">Jie Du (P)</option>
+                        <option value="Larry Kotman (P)">Larry Kotman (P)</option>
+                        <option value="Teresa M Peterman (P)">Teresa M Peterman (P)</option>
+                        <option value="Gregory S Wolffe (P)">Gregory S Wolffe (P)</option>
+                        <option value="Xiang Cao (P)">Xiang Cao (P)</option>
+                     </select>
+                  </div>
+               </div>
+               <div class="search1_3" id="divCat1_3" style="overflow:auto;margin: 15px;">
+                  <h4 style="padding:0; margin:0;">Campus</h4>
+                  <div class="select" style="width:100%;height:2em; line-height: 2;">
+                     <select class="slct" name="slct" id="isearchCamp" onchange="">
+                        <option value="None">NONE</option>
+                        <option value="ALL">Allendale</option>
+                        <option value="DET">Detroit</option>
+                        <option value="HOL">Holland</option>
+                        <option value="MUS">Muskegon</option>
+                        <option value="OTI">Other International</option>
+                        <option value="OTM">Other Michigan</option>
+                        <option value="OTS">Other State</option>
+                        <option value="PEW">Pew</option>
+                        <option value="TRC">Traverse City</option>
+                     </select>
+                  </div>
+               </div>
+               <div class="search1_3" id="divCat1_4" style="overflow:auto;margin: 15px;">
+                  <h4 style="padding:0; margin:0;">Days(Multi-Select)</h4>
+                  <select name="sel_camp" size="3" multiple="" id="iWeekdays" style="width:100%;height:4em; line-height: 2;background: #2c3e50;color: #fff;">
+                     <option value="M">MONDAY</option>
+                     <option value="T">TUESDAY</option>
+                     <option value="W">WEDNESDAY</option>
+                     <option value="R">THURSDAY</option>
+                     <option value="F">FRIDAY</option>
+                     <option value="S">SATURDAY</option>
+                     <option value="U">SUNDAY</option>
+                  </select>
+               </div>
+               <button class="dd" type="button" name="button" value="Sign-In" style="font-size: 15px;font-weight: bold;color: #fff;border: 2px solid #4caf50;padding: 5px;background: #1d74ba;margin-left: 15px;width:250px;" onclick="advanceSearch()">Filter Results</button>
+            </div>
+         </div>
+         <div class="coursedata" id="icoursedata">
+            <div class="selectSem" style="display:none;">
+               <p id="header2" style="top:30%;text-align:center;">Select your Semester</p>
+               <div class="login-box">
+                  <div class="select" style="width:100%;top:0px;">
+                     <select class="slct" name="slct" id="selectSem" onchange="onSemChange()">
+                        <option value="None">NONE</option>
+                        <option value="Fall 2018">Fall 2018</option>
+                        <option value="Winter 2019">Winter 2019</option>
+                        <option value="Summer 2019">Summer 2019</option>
+                        <option value="Spring 2019">Spring 2019</option>
+                     </select>
+                  </div>
+               </div>
+            </div>
+            <div class="coursedetails" style="display:block;">
+               <h4 class="text-primary"> Select the courses you would like to register and click on Enroll at bottom</h4>
+               <table width="100%" class="display" id="example" cellspacing="2px" style="padding-top:15px;">
+                  <thead>
+                     <tr>
+                        <th></th>
+                        <th>Select</th>
+                        <th>CRN</th>
+                        <th>Subject</th>
+                        <th>Course Number</th>
+                        <th>Title</th>
+                     </tr>
+                  </thead>
+                  <tfoot>
+                     <tr>
+                        <th></th>
+                        <th>Select</th>
+                        <th>CRN</th>
+                        <th>Subject</th>
+                        <th>Course Number</th>
+                        <th>Title</th>
+                     </tr>
+                  </tfoot>
+               </table>
+            </div>
+						<button class="dd" type="button" name="button" style="font-size: 15px;color: #fff;border: 2px solid #4caf50;padding: 5px;font-weight: bold;background: #1d74ba;margin-left: 40%;width:250px;" onclick="alert('Enrolled successfully');lSearch4();">Enroll</button>
+
+
+         </div>
+      </div>
+      <div class="enrolleddetails" id="enrollmaindiv" style="display:none;width:100%;background-color: #DCF2EE">
+         <h3 class="text-primary"style="text-align:center;"> Courses Enrolled</h3>
+         <table width="100%" class="display" id="example1" cellspacing="2px" style="padding-top:15px;">
+            <thead>
+               <tr>
+                  <th></th>
+                  <th>Select</th>
+                  <th>CRN</th>
+                  <th>Subject</th>
+                  <th>Course Number</th>
+                  <th>Title</th>
+               </tr>
+            </thead>
+            <tfoot>
+               <tr>
+                  <th></th>
+                  <th>Select</th>
+                  <th>CRN</th>
+                  <th>Subject</th>
+                  <th>Course Number</th>
+                  <th>Title</th>
+               </tr>
+            </tfoot>
+         </table>
+				 <button class="dd" type="button" name="button" style="font-size: 15px;color: #fff;border: 2px solid #4caf50;padding: 5px;font-weight: bold;background: #1d74ba;margin-left: 10;width:250px;" onclick="alert('Deleted successfully');">Disenroll</button>
+      </div>
+   </body>
+</html>

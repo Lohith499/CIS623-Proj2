@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="\css\style.css">
+      <link rel="stylesheet" href="\css\bootstrap.min.css">
+       <script src="js/jquery.js"></script>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+      <title>Document</title>
+   </head>
+
+
+   <body>
+        <div id="gvsu-logo" style="background: #1d74ba;color: #fff;">
+                    <p id="header" style="padding:0; margin:0;text-align:center;">Grand Valley State University </p>
+				</div>
+      <div>
+      <p id="header1" style="padding:0; margin:0;text-align:center;">Schedule Manager</p>
+    </div>
+
+
+  <div class="row">
+     <div class="col-md-5" style=" border-right: 3px solid #4caf50; border-bottom: 3px solid #4caf50;border-left: 3px solid #4caf50;">
+         <div class="login-box" >
+           <form>
+            <h1 class="text-primary">Login</h1>
+            <div class="textbox">
+               <i class="fas fa-user text-primary"></i>
+               <input type="text" id="usr" placeholder="Username" name="user" value="">
+            </div>
+            <div class="textbox">
+               <i class="fas fa-lock text-primary"></i>
+               <input type="password" id="pwd" placeholder="Password" name="password" value="">
+            </div>
+            <div style="padding:10px; margin:10px;position:relative;">
+            <button class="btn" type="button" name="button" value="Sign-In" style="left:0;" onclick="login()">Sign In</button>
+            <button class="btn" type="button" name="button" value="cancelbtn" style="right:0;" onclick="fCancel()">Cancel</button>
+          </div>
+          </form>
+        </br>
+          <div style="background-color:#f1f1f1;text-align: center;padding:0;margin:5px;border:2px solid green;">
+               <span class="psw" ><a href="#">Forgot password?</a></span>
+            </div>
+
+            <div style="background-color:#f1f1f1;text-align: center;padding:0px;margin:5px;border:2px solid green;">
+                 <span class="psw" ><a href="#" >New User! Register Here</a></span>
+              </div>
+         </div>
+       </br>
+
+
+     </br>
+      </div>
+
+    <div class="col-md-7" style="border-right: 3px solid #4caf50; border-bottom: 3px solid #4caf50;">
+      <div class="default">
+								<h3 name="general-info" id="general-info" class="text-primary">General Information</h3>
+								<p>
+									You are entering a secure login area in which designated applications at GVSU are allowed to use
+									your login credentials entered on this site for authentication. This allows you to login once
+									with your network ID and password and have access to designated applications without logging in
+									multiple times. GVSU Information Technology will continue to review applications that meet the
+									requirements for this type of authentication but cannot guarantee all applications have the
+									ability to do so.
+								</p>
+								<h3 name="trouble-logging-in" id="trouble-logging-in" class="text-primary">Trouble Logging In?</h3>
+								<p>
+									Contact the Information Technology Helpdesk at <a href="tel:+1-616-331-2101">616-331-2101</a> or
+									visit <a href="http://gvsu.edu/it/" target="_blank">http://gvsu.edu/it/</a>
+								</p>
+								<h3 name="reset-password" id="reset-password" class="text-primary">Reset / Change Your Network Password</h3>
+								<p>
+									You may change your network password by following the instructions at <a href="https://www.gvsu.edu/passwordreset">https://www.gvsu.edu/passwordreset</a>
+								</p>
+							</div>
+
+    </div>
+</div>
+
+
+   </body>
+
+   <script>
+function login() {
+  var usr=document.getElementById('usr').value;
+  var pwd=document.getElementById('pwd').value;
+
+  if(usr=="Student1" && pwd=="1234") {
+    alert("Logged in as FreOrSop");
+    sessionStorage.Usertype = "FreOrSop";
+    window.location.replace("table11.html");
+
+  } else if (usr=="Student2" && pwd=="1234"){
+    alert("Logged in as Senior");
+    sessionStorage.Usertype = "OtherStudent";
+    window.location.replace("table11.html");
+
+  } else if (usr=="Teacher" && pwd=="1234"){
+    alert("Teacher");
+    sessionStorage.Usertype = "Teacher";
+    window.location.replace("table11.html");
+
+  }else {
+    alert("Wrong credentials");
+    Document.getElementById('usr').value="";
+    Document.getElementById('pwd').value="";
+  }
+}
+   </script>
+
+   </script>
+</html>
